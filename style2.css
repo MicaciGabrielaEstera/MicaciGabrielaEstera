@@ -1,0 +1,238 @@
+/* ---------- SIMPLE CSS RESET --------*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	outline: 0px;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+/* --------------HTML5 display-role reset for older browsers ------------ */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+html {
+	min-height: 100%;
+	margin: 0;
+	padding: 0;
+}
+	
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+img {
+		max-width: 100%;
+		height:auto;
+		width: auto;
+		vertical-align: middle;
+		border: none;
+		-ms-interpolation-mode: bicubic;
+	}
+
+input[type="text"],input[type="password"],input[type="email"], textarea, select {
+		width: 100%;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+		font: inherit;
+	}
+
+	.clearfix:before,
+	.clearfix:after {
+	  content: '\0020';
+	  display: block;
+	  overflow: hidden;
+	  visibility: hidden;
+	  width: 0;
+	  height: 0;
+	}
+
+	.clearfix:after {
+	  clear: both;
+	}
+	
+	
+/* ----------- GLOBAL STYLES --------*/
+	body{
+		font-family: Lato, sans-serif;
+		font-size: 16px;
+		line-height: 22px;
+		color: #555555;
+		font-weight: 300;
+	}
+	
+		a{
+		color: #ff3b30;
+		text-decoration: none;
+		transition: all 180ms ease-in;
+		-webkit-transition: all 180ms ease-in;
+		-moz-transition: all 180ms ease-in;
+		-o-transition: all 180ms ease-in;
+	}
+
+	a:hover{
+		color: #555555;
+		transition: all 180ms ease-in;
+		-webkit-transition: all 180ms ease-in;
+		-moz-transition: all 180ms ease-in;
+		-o-transition: all 180ms ease-in;
+	}
+
+	p{
+		margin-bottom: 24px;
+		font-weight: 300;
+	}
+		h1, h6{
+		font-family: Lato;
+		font-weight: 300;
+		color: #202024;
+		margin-bottom: 11px;
+	}
+
+	h2, h3, h4{
+		font-family: Lato;
+		font-weight: 500;
+		color: #202024;
+		margin-bottom: 11px;
+	}
+
+	h1{
+		font-size: 35px;
+		line-height: 42px;
+	}
+
+
+	
+	h2{
+		font-size: 25px;
+		line-height: 36px;
+	}
+
+	h3{
+		font-size: 24px;
+		line-height: 29px;
+	}
+	h4{
+		font-size: 20px;
+		line-height: 24px;
+		}
+
+		h5{
+		font-size: 16px;
+		font-weight: 500;
+		line-height: 22px;
+		color: #c0c0c0;
+		font-family: Lato;
+		}
+
+	h6{
+		font-size: 14px;
+		line-height: 16px;
+	}
+	
+	.uppercase{
+	text-transform: uppercase;
+	}
+	#nav_container	, {
+		width: 1200px;
+		margin: 0 auto;
+	}
+	
+	.left{float: left;}
+.right{float: right;}
+	
+	/*------------ header 2 -----------------*/
+	#nav_container{
+	    background-color: rgb(51, 51, 51);
+	}
+	
+	#main_header{
+	padding: 55px 25px 10px;
+	}
+	
+	#main_header div{
+	margin: 0px 25px 0px 0px;
+	}
+	
+	.h1_header{
+	color: #ffebcd;
+	margin-bottom: 0;
+	}
+	
+	ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+ul.topnav li {float: right;}
+
+ul.topnav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 12px 14px;
+    text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active) {background-color: #111;}
+
+ul.topnav li a.active {background-color: #4CAF50;}
+
+ul.topnav li.left {float: left;}
+
+
+
+/*business card*/
+ #background{
+
+	border: 2px solid black;
+    padding: 25px;
+    background-image: url('images/background.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+
+@media screen and (max-width: 600px){
+    ul.topnav li.left, 
+    ul.topnav li {float: none;}
+}
+	
